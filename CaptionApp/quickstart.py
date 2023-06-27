@@ -3,8 +3,8 @@
 
 import azure.cognitiveservices.speech as speechsdk
 
-speech_key = "a9229554d38e4986864ac9c6ed4fb954"
-service_region = "westus"
+speech_key = "Your service key"
+service_region = "your_region"
 
 
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
