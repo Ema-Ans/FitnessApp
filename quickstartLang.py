@@ -5,12 +5,13 @@ import time
 import os
 import azure.cognitiveservices.speech as speechsdk
 
+#make sure to add your key and region on line 14
 
 def initialize_speech_recognizer(language):
     global speech_recognizer, speech_key, service_region
     # Creates an instance of a speech config with specified subscription key and service region.
     # Replace with your own subscription key and service region (e.g., "westus").
-    speech_key, service_region = "a9229554d38e4986864ac9c6ed4fb954", "westus"
+    speech_key, service_region = "your speech key", "your region"
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
     # Set the language for speech recognition
